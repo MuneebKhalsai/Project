@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    #details{
+        display: none;
+    }
+body {
+            background-image: url('dark.jpg');
+            background-size: cover;
+            background-position: center; /* Optional: Adjust the position as needed */
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            height: 100vh;
+            margin-top: 40px;
+            color: white;
+            align-items: center;
+            justify-content: center;
+        }
+        .card{
+          border: 1px black solid;
+          color: white;
+          text-align: center;
+          padding: auto;
+          margin-left: -450px;
+          background-color: black;
+          width: 300px;
+          height: 220px;
+        }
+        footer {
+      background-color: rgba(50, 50, 50, 0.8); /* Dark grey with 80% opacity */
+      padding: 20px 0;
+      color: #fff;
+     }
+.footer-icons {
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+    }
+  .footer-heading {
+     color: #8FBC8F;
+    }
+    .footer-icons a {
+      color: white;
+      font-size: 24px;
+      margin: 0 15px; /* Increased margin for more distance between icons */
+      text-decoration: none;
+    }
+    .footer-icons a:hover {
+      color: #ccc;
+    }
+        </style>
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src="https://static.vecteezy.com/system/resources/thumbnails/008/056/934/small/gift-shop-initial-handwriting-logo-design-gift-shop-modern-logo-design-gift-logo-design-vector.jpg" width="50px" height="auto"></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="project.html">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="product.html">Products<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="watch.html">Watches</a></li>
+          <li><a href="phone.html">Mobile Phones</a></li>
+          <li><a href="bracelet.html">Bracelets</a></li>
+          <li><a href="Mug.html">Customize Mugs</a></li>
+          <li><a href="ring.html">Ring</a></li>
+          <li><a href="perfume.html">Perfume</a></li>
+        </ul>
+      </li>
+      <li><a href="about-us.html">About</a></li>
+      <li><a href="contact-us.html">Contact us</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="signUp.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="row">
+    <div class="col-sm-12 col-md-6 col-xs-12" >
+        <img src="ring5.jpg" style="width:  90%; height: auto; margin-left: 20px; margin-bottom: 20px;">
+        <button type="button" id="abc" class="btn btn-primary btn-lg" style="margin-left: 20px; ">More Details</button>
+        <div id="details" style="margin-left: 20px;">
+        <h5 class="card-title"><b>MUGS</b></h5>
+                        <p class="card-text"><b>Category:</b>DIMOND RING</p>
+                        <p class="card-text"><b>Code:</b>   AWI-9761</p>
+                         <p class="card-text"><b>Price:</b>   Rs 7999/-</p>
+                      <p class="card-text"><b>Color:</b> Golden</p>
+                        <button class="btn btn-primary"><b>  Add to cart</b></button>
+        
+    </div>
+</div>
+  
+    <div class="col-sm-12 col-md-6 col-xs-12" >
+       
+        
+   <h1> RINGS</h1>
+                <p>A ring is a round band, usually made of metal, worn as ornamental jewelry. The term "ring" by itself always denotes jewellery worn on the finger; when worn as an ornament elsewhere, the body part is specified within the term, e.g., earrings, neck rings, arm rings, and toe rings.A ring is a round band, usually made of metal, worn as ornamental jewelry. The term "ring" by itself always denotes jewellery worn on the finger; when worn as an ornament elsewhere, the body part is specified within the term, e.g., earrings, neck rings, arm rings, and toe rings.A ring is a round band, usually made of metal, worn as ornamental jewelry. The term "ring" by itself always denotes jewellery worn on the finger; when worn as an ornament elsewhere, the body part is specified within the term, e.g., earrings, neck rings, arm rings, and toe rings. </p>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    
+$(document).ready(function(){
+$("#abc").click(function(){
+$("#details").toggle(500)
+
+if ($("#details").is(":visible")) {
+
+    $(this).text("Less details")
+
+
+}
+else{$(this).text("More details")
+}
+
+})
+
+
+})
+
+
+</script>
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h3 class="footer-heading">Exclusive Gift Collection</h3>
+          <p>Discover a unique and exclusive collection of gifts for every occasion at Gifts Galore.</p>
+        </div>
+        <div class="col-md-3">
+          <h3 class="footer-heading">Personalized Gift Services</h3>
+          <p>Create cherished memories with our personalized gift options, tailored just for your loved ones.</p>
+        </div>
+        <div class="col-md-3">
+          <h3 class="footer-heading">Special Occasion Gift Boxes</h3>
+          <p>Explore our themed gift boxes designed for birthdays, anniversaries, and special moments.</p>
+        </div>
+        <div class="col-md-3">
+          <h3 class="footer-heading">Stay Connected with Gifts Galore</h3>
+          <p>Follow us on social media for the latest updates, promotions, and exclusive offers!</p>
+        </div>
+      </div>
+      <div class="footer-icons">
+        <a href="https://www.facebook.com/guest/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/guest/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.pinterest.com/guest/"><i class="fab fa-pinterest"></i></a>
+        <a href="https://www.twitter.com/guest"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    #details{
+        display: none;
+    }
+body {
+            background-image: url('dark.jpg');
+            background-size: cover;
+            background-position: center; /* Optional: Adjust the position as needed */
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            height: 100vh;
+            margin-top: 40px;
+            display: flex;
+            color: white;
+            align-items: center;
+            justify-content: center;
+        }
+        .card{
+          border: 1px black solid;
+          color: white;
+          text-align: center;
+          padding: auto;
+          margin-left: -450px;
+          background-color: black;
+          width: 300px;
+          height: 220px;
+        }
+        </style>
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src="https://static.vecteezy.com/system/resources/thumbnails/008/056/934/small/gift-shop-initial-handwriting-logo-design-gift-shop-modern-logo-design-gift-logo-design-vector.jpg" width="50px" height="auto"></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a href="project.html">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Products<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Watches</a></li>
+          <li><a href="#">Mobile Phones</a></li>
+          <li><a href="#">Bracelets</a></li>
+          <li><a href="#">Customize Mugs</a></li>
+          <li><a href="#">Necklace</a></li>
+          <li><a href="#">Perfume</a></li>
+        </ul>
+      </li>
+      <li><a href="about-us.html">About</a></li>
+      <li><a href="contact-us.html">Contact us</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="signUp.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li class="active"><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+<br>
+
+<div class="row">
+    <div class="col-sm-12 col-md-6 col-xs-12" >
+        <img src="mug1.jpg" style="width:  90%; height: auto; margin-left: 20px; margin-bottom: 20px;">
+        <button type="button" id="abc" class="btn btn-primary btn-lg" style="margin-left: 20px; ">More Details</button>
+        <div id="details" style="margin-left: 20px;">
+        <h5 class="card-title"><b>MUGS</b></h5>
+                        <p class="card-text"><b>Category:</b>Coffee Mug</p>
+                        <p class="card-text"><b>Code:</b>   AWI-9761</p>
+                         <p class="card-text"><b>Price:</b>   Rs 999/-</p>
+                      <p class="card-text"><b>Category:</b> Glass</p>
+                        <button class="btn btn-primary"><b>  Add to cart</b></button>
+        
+    </div>
+</div>
+  
+    <div class="col-sm-12 col-md-6 col-xs-12" >
+       
+        
+   <h1> TEA MUGS</h1>
+                <p>A mug is a type of cup typically used for drinking hot drinks, such as coffee, hot chocolate, or tea. Mugs usually have handles[1] and hold a larger amount of fluid than other types of cups. Typically, a mug holds approximately 240–350 ml (8–12 US fl oz; 8.3–12.5 imp fl oz) of liquid.[2] A mug is a less formal style of drink container and is not usually used in formal place settings, where a teacup or coffee cup is preferred. Shaving mugs are used to assist in wet shaving.A mug is a type of cup typically used for drinking hot drinks, such as coffee, hot chocolate, or tea. Mugs usually have handles[1] and hold a larger amount of fluid than other types of cups. Typically, a mug holds approximately 240–350 ml (8–12 US fl oz; 8.3–12.5 imp fl oz) of liquid.[2]A mug is a type of cup typically used for drinking hot drinks, such as coffee, hot chocolate, or tea. Mugs usually have handles[1] and hold a larger amount of fluid than other types of cups. Typically, a mug holds approximately 240–350 ml (8–12 US fl oz; 8.3–12.5 imp fl oz) of liquidA mug is a type of cup typically used for drinking hot drinks, such as coffee, hot chocolate, or tea. Mugs usually have handles[1] and hold a larger amount of fluid than other types of cups.</p>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    
+$(document).ready(function(){
+$("#abc").click(function(){
+$("#details").toggle(500)
+
+if ($("#details").is(":visible")) {
+
+    $(this).text("Less details")
+
+
+}
+else{$(this).text("More details")
+}
+
+})
+
+
+})
+
+
+</script>
+
+</body>
+</html>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
