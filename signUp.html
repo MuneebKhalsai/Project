@@ -2,6 +2,24 @@
 <html>
 <head>
 	<title></title>
+    <script type="text/javascript">
+        function (login) {
+        
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["name"])) {
+    $nameErr = "Name is required";
+  } else {
+    $name = test_input($_POST["name"]);
+    if(!preg_match("/^[a-zA-Z' ]*$/",$name)){
+      $nameErr = "Only text and white space are allowed";
+    }
+  }
+
+
+
+
+      }
+    </script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -114,6 +132,8 @@
                     <div class="form-group">
                         <label for="first-name">First Name:</label>
                         <input type="text" class="form-control" id="first-name" name="first-name" required>
+
+                        
                     </div>
 
                     <div class="form-group">
@@ -151,7 +171,7 @@
                     </div>
 
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                        <button type="submit" class="btn btn-primary btn-block" onclick="profile.html">Sign Up</button>
                     </div>
 
                     <div class="create-account">
